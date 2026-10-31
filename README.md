@@ -1,4 +1,4 @@
-# OUT OF FRAME — Exhibition website v1.0
+# OUT OF FRAME — Exhibition website v1.1
 
 A complete static exhibition site, prepared for offline preview or hosting on any ordinary static web server.
 
@@ -52,3 +52,11 @@ The working site is a local prototype / publishable static build, not a live dep
 - `works/the-royal-ring.html`, `assets/js/royal-ring.js` — immersive interface
 
 The master PNG is ~4344 × 1448 pixels; a future large-format print should be assessed separately for production resolution. This website package does not claim print-production approval.
+
+## v1.1 — Visual chapter details
+
+The Royal Ring's nine research chapters now begin with curated, enlarged crops of the frozen artwork or original 1911 photograph. Every chapter includes an accompanying locator thumbnail that highlights its actual crop region in the full panorama, plus buttons to enlarge the detail and navigate back to the corresponding area in the zoomable panorama. The Duke of Teck's sub-story has a separate close-up.
+
+All crops are **display derivatives** of the frozen v1.7 master or the unmodified original `george-original.jpg`. They do not change either master asset. Locator overlays are navigation guides, not additional photographic evidence. The provenance grades remain as documented in v0.5.
+
+Assets live under `assets/images/details/`; the chapter-to-image associations are stored on each card's `visual` object in `assets/js/royal-data.js`. Buffalo Corner remains a placeholder and has not been modified.
