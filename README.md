@@ -8,6 +8,10 @@ All nine Royal Ring research chapter hotspots were individually reviewed against
 
 A full per-chapter table is in `ROYAL_RING_ALIGNMENT_AUDIT_v1_3.md` and the optional master overlay is `previews/royal-ring-v1.3-alignment-audit.png`.
 
+## Image-only patch, 31 October 2026 — Royal Ring v2.14
+
+The active web panorama is now the artist-supplied **Royal Ring v2.14 Guest Seating Microedit**. The unchanged authored PNG is at `assets/images/royal-ring-v2.14-master.png` as received at **2048 × 682 pixels**; this is lower than the 4344 × 1448 dimension indicated in the upload's filename. The website's browser-optimised WebP, cover, six reconstructed chapter details, the Teck subdetail and nine locator thumbnails were regenerated from this exact supplied image. The historical original and the three archival closeups were not touched. All chapter and Teck coordinates remain those of v1.3; no remapping was necessary. The old v2.13 full-resolution PNG remains in place as the prior version and is no longer the current web display. See `ROYAL_RING_MASTER_UPDATE_v2_14.md`.
+
 ## Preview
 
 Unzip the full package, then open `index.html`. This is an offline-capable static website; no build, account or installation is required. Newsreader and Source Sans 3 load when online, with usable system fallbacks offline. External archival source links need connectivity.
