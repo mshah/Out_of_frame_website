@@ -9,3 +9,16 @@
 - The test environment blocked direct `file://` and local HTTP navigation inside its own Chromium sandbox. In-memory page rendering was used for visual and interaction checks; the real multi-page website has **not** been tested through a deployed public URL.
 - The approved v1.7 image and the original historical photograph were copied into the site without modification. Browser display copies were compressed separately.
 - Historical permissions and reproduction licensing have not been resolved by this site build; verify for public release.
+
+
+## v1.2 editorial add-on
+- Four provisional essays and landing page added.
+- Main navigation includes Essays on all six existing pages.
+- No changed files in `assets/images`, `assets/js/royal-ring.js`, or `assets/js/royal-data.js`.
+- Source essays available as Markdown for future editorial revision.
+
+### v1.2 verification details
+- Relative internal page, stylesheet, script and image links checked against the packaged file tree: no missing paths.
+- Desktop 1440 px and mobile 390 px screenshots rendered from in-memory HTML/CSS using Chromium: no horizontal overflow in the essay index, article layouts or home.
+- Direct local HTTP browser navigation was restricted in the test environment, so the rendered screenshot pass uses in-memory content. Hosting-platform verification is still required when deployed.
+- SHA-256 of the frozen Royal Ring PNG, original George V JPEG, and its core interactive scripts matched website v1.1.

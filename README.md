@@ -60,3 +60,15 @@ The Royal Ring's nine research chapters now begin with curated, enlarged crops o
 All crops are **display derivatives** of the frozen v1.7 master or the unmodified original `george-original.jpg`. They do not change either master asset. Locator overlays are navigation guides, not additional photographic evidence. The provenance grades remain as documented in v0.5.
 
 Assets live under `assets/images/details/`; the chapter-to-image associations are stored on each card's `visual` object in `assets/js/royal-data.js`. Buffalo Corner remains a placeholder and has not been modified.
+
+
+## v1.2 — provisional essays
+
+- `essays/index.html` — reading-room landing page.
+- `essays/the-making-of-a-trophy.html` — principal curatorial essay (working draft v0.1).
+- `essays/the-performance-of-power.html` — thematic essay (working draft v0.1).
+- `essays/the-people-at-the-edge-of-history.html` — thematic essay (working draft v0.1).
+- `essays/the-spectacle-of-killing.html` — thematic essay (working draft v0.1).
+- `essays/drafts/*.md` — editable source drafts.
+
+All essays are explicitly marked provisional. Cross-links to individual photographs and image-specific documentation remain intentionally light pending selection of the other works. The Royal Ring panorama, source original and research annotation data are unchanged.
