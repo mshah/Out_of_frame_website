@@ -1,24 +1,11 @@
-# Out of Frame site v1.0 — Quality assurance
+# QA notes — v1.3
 
-- Six pages implemented as linked, standalone HTML files.
-- The site's own CSS and JavaScript are local. No third-party script libraries are required.
-- Desktop and mobile layouts were rendered with in-memory Chromium HTML, CSS and JavaScript and visually reviewed.
-- Automated checks exercised the Royal Ring controls: reveal ten navigation points (nine studies + Duke sub-story), choose a chapter, switch story/evidence/sources, view the original, zoom the panorama and reset.
-- Mobile navigation open/close was exercised.
-- Link paths, image files and JS syntax were checked. No JS page errors, missing images or document-level horizontal overflow were reported by those tests.
-- The test environment blocked direct `file://` and local HTTP navigation inside its own Chromium sandbox. In-memory page rendering was used for visual and interaction checks; the real multi-page website has **not** been tested through a deployed public URL.
-- The approved v1.7 image and the original historical photograph were copied into the site without modification. Browser display copies were compressed separately.
-- Historical permissions and reproduction licensing have not been resolved by this site build; verify for public release.
-
-
-## v1.2 editorial add-on
-- Four provisional essays and landing page added.
-- Main navigation includes Essays on all six existing pages.
-- No changed files in `assets/images`, `assets/js/royal-ring.js`, or `assets/js/royal-data.js`.
-- Source essays available as Markdown for future editorial revision.
-
-### v1.2 verification details
-- Relative internal page, stylesheet, script and image links checked against the packaged file tree: no missing paths.
-- Desktop 1440 px and mobile 390 px screenshots rendered from in-memory HTML/CSS using Chromium: no horizontal overflow in the essay index, article layouts or home.
-- Direct local HTTP browser navigation was restricted in the test environment, so the rendered screenshot pass uses in-memory content. Hosting-platform verification is still required when deployed.
-- SHA-256 of the frozen Royal Ring PNG, original George V JPEG, and its core interactive scripts matched website v1.1.
+- Image basis: exact locked v2.13 master 4344x1448; original sepia photograph remains unchanged.
+- All nine chapter IDs present exactly once; each hotspot center lies within its freshly-rendered highlighted locator rectangle.
+- Chapter anchors, subchapter Teck, reconstructed detail crops and historical-original source crops individually examined.
+- GV-04 and GV-06 previous mismatches corrected; see `ROYAL_RING_ALIGNMENT_AUDIT_v1_3.md`.
+- T / Duke of Teck uses its own marker coordinate and focus detail; this extra marker is *not* a tenth chapter.
+- All four curatorial essays, site-wide styling, navigation, and collection routes preserved from v1.2.
+- Completed: JS syntax and nine-chapter interactive smoke tests in isolated desktop (1440px) and mobile (390px) browser contexts; detail/evidence/source tabs, Teck focus, zoom, original toggle, reset, all passed without page errors. Completed relative-link, image-asset and ZIP checks.
+- Live-site navigation and genuine mobile touch gestures could not be tested: the environment blocks file:// and localhost browser navigation. The isolated tests verify application logic, not deployment networking or physical touch behaviour.
+- Historical/rights/source editorial checks are still pending from the earlier v1.2 release.
