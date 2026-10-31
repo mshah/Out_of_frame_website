@@ -20,3 +20,12 @@
 ### v1.4.1 follow-up
 - Buffalo Corner explorer updated to mirror the Royal Ring chapter interaction pattern.
 - Confirmed 13 chapter buttons, markers, chapter tabs, enlarged detail dialog, original-photo toggle and deep-link loading.
+
+
+### v1.4.2 editorial and interaction audit
+- All 13 Buffalo Corner public narratives reviewed against annotation packet v4.0; exact predecessor texts retained in `packetAnnotation` for traceability.
+- Both artwork explorers now use aligned research-chapter, locator, button, evidence and source labels.
+- About/Method text updated to cover both completed artworks; home/collection CTAs harmonised.
+- The chapter IDs, research questions, evidence fields, grades, citations, bounds and raster images are unchanged.
+- Isolated Chromium checks passed for all 13 Buffalo and all 9 Royal chapter selections on desktop; sampled mobile chapters; zoom, source-photo view, detail dialog, filters, reset and marker reveal/hide. No JS page errors.
+- Direct hosted-path deployment was not tested; runtime browser policy blocks localhost/file URLs. Preview tests injected exact site HTML, local CSS, scripts and image content into isolated Chromium documents.

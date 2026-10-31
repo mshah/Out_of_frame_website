@@ -29,3 +29,7 @@
 **Research limits:** The sepia rectangle contains the historical photograph; the colour field is contemporary artistic reconstruction. It combines different moments. Scene coordinates are navigational working bounds, not historic measurements. Ali operating a camera is an explicitly counterfactual intervention. Source endpoints and rights claims in the packet have not all been independently rechecked. The v2.1 working PNG is not a final exhibition-resolution print proof.
 
 See `RELEASE_v1_4.md`, `QA_NOTES.md` and `ROYAL_RING_ALIGNMENT_AUDIT_v1_3.md` for changes and technical checks.
+
+
+## v1.4.2 editorial consistency pass
+Buffalo Corner and The Royal Ring now use the same research-chapter terminology, control labels, evidence key, locator copy and source framing. All thirteen Buffalo chapters received line edits; the original v4.0 packet copy is retained in the non-displayed `packetAnnotation` field for editorial traceability. The About and Method pages now accurately describe both completed experiences. See `EDITORIAL_STYLE_GUIDE_v1_4_2.md`.
