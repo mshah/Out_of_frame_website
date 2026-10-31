@@ -1,11 +1,22 @@
-# QA notes — v1.3
+# QA — Out of Frame v1.4
 
-- Image basis: exact locked v2.13 master 4344x1448; original sepia photograph remains unchanged.
-- All nine chapter IDs present exactly once; each hotspot center lies within its freshly-rendered highlighted locator rectangle.
-- Chapter anchors, subchapter Teck, reconstructed detail crops and historical-original source crops individually examined.
-- GV-04 and GV-06 previous mismatches corrected; see `ROYAL_RING_ALIGNMENT_AUDIT_v1_3.md`.
-- T / Duke of Teck uses its own marker coordinate and focus detail; this extra marker is *not* a tenth chapter.
-- All four curatorial essays, site-wide styling, navigation, and collection routes preserved from v1.2.
-- Completed: JS syntax and nine-chapter interactive smoke tests in isolated desktop (1440px) and mobile (390px) browser contexts; detail/evidence/source tabs, Teck focus, zoom, original toggle, reset, all passed without page errors. Completed relative-link, image-asset and ZIP checks.
-- Live-site navigation and genuine mobile touch gestures could not be tested: the environment blocks file:// and localhost browser navigation. The isolated tests verify application logic, not deployment networking or physical touch behaviour.
-- Historical/rights/source editorial checks are still pending from the earlier v1.2 release.
+## Build / local validation
+
+- Buffalo annotation packet v4.0: all **13** IDs (BC-01…BC-13), scene titles, questions, visible descriptions, curatorial text, evidence, individual claim grades, cautions, cross-links and source keys transferred; **29** reference keys preserved.
+- Hotspots from source table 5, normalized against **2172 × 724**; overlaps in rectangles remain possible and the numbered list is the reliable alternative. The independent overlay audit is in `previews/buffalo-v1.4-hotspot-audit.jpg`.
+- Interactive JS and the other local JS pass static syntax validation.
+- Isolated Chromium document tests (required because the environment blocks localhost/file navigation) passed for desktop and mobile. Checked scene selection, all 13 evidence/source tabs on desktop, sample chapters on mobile, show/hide markers, original view, zoom, reset, detail dialog / Escape and no runtime JS errors. Those are functional checks; **not** final deployed-browser or physical mobile tests.
+- Relative internal asset/page links checked, PNG/WEBP/TIFF decoded and ZIP CRC tested.
+- Royal Ring v2.14 image assets and original nine-chapter JS retained from the prior patch; no new remapping of Royal Ring was undertaken.
+
+## Editorial publication gates
+
+- Verify historic source URLs, credit/rights scope and edition-specific page quotations; master packet notes some are unresolved.
+- Test the draft hotspot hit regions on physical touch devices, especially BC-03/04 and BC-04/09 overlap zones.
+- Accepted Buffalo Corner panorama v2.1 is web-ready as **working art**, but not a certified exhibition-resolution print master. Source-TIFF re-integration / print proof remains pending.
+- Ensure public context is not interpreted as a recovered panoramic negative or a single simultaneous historical moment.
+
+
+### v1.4.1 follow-up
+- Buffalo Corner explorer updated to mirror the Royal Ring chapter interaction pattern.
+- Confirmed 13 chapter buttons, markers, chapter tabs, enlarged detail dialog, original-photo toggle and deep-link loading.

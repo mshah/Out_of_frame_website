@@ -169,3 +169,43 @@ h1,h2,h3{font-optical-sizing:auto}h1{font-weight:300}h2{font-weight:400}
 .teck-focus .detail-image-button{max-width:460px}
 .teck-focus .detail-image-button img{width:100%;max-height:290px;object-fit:contain}
 .teck-focus p{color:#e2e6d9;line-height:1.55;font-size:.91rem;margin:14px 0}
+
+/* v1.4 — Buffalo Corner: The Wider Camp. Working master v2.1. */
+.buffalo-landing .art-bg{object-position:50% 48%;filter:brightness(.67) saturate(.76)}
+.buffalo-landing:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#09170fdd 0%,#1023199a 48%,#121d1260 100%),linear-gradient(0deg,#0d180ff0,transparent 55%);z-index:-1}
+.buffalo-experience .explorer-intro p{max-width:670px}
+.buffalo-method{background:#213026;border:1px solid #7f8d79;border-left:4px solid var(--gold);color:#e9ede2;padding:16px 21px;margin:0 0 20px;font-size:.92rem;line-height:1.6}
+.buffalo-method a{color:#e9d09c}
+.buffalo-stage{min-width:0!important;width:100%;aspect-ratio:3 / 1;touch-action:pan-x pan-y}
+.buffalo-stage.original{aspect-ratio:auto!important;min-width:0!important}
+.buffalo-stage.original img{object-fit:contain;max-width:90%;max-height:96%}
+.buffalo-experience .stage-window{cursor:grab;touch-action:pan-x pan-y}
+.buffalo-experience .stage-window.dragging{cursor:grabbing}
+.buffalo-experience .hotspot{width:42px;height:42px;min-width:42px;min-height:42px;border:2px solid #f4e1b7;font-size:.75rem;box-shadow:0 3px 18px #080e07e8}
+.buffalo-paths{margin-top:23px;border-block:1px solid #536353;padding-block:20px}
+.buffalo-path-buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:11px}
+.buffalo-path{padding:9px 13px;border:1px solid #647c67;background:#253329;color:#e7eee4;font:600 .83rem var(--sans);border-radius:4px}
+.buffalo-path:hover,.buffalo-path.active{background:var(--gold);border-color:var(--gold);color:#112015}
+.buffalo-count{float:right;color:var(--gold)}
+.buffalo-related{margin-top:26px;border-top:1px solid #5c6b60;padding-top:19px}
+.buffalo-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+.buffalo-related-button{background:#314239;border:1px solid #687a6b;color:#eeeadd;padding:8px 11px;font-size:.82rem;border-radius:4px;text-align:left}
+.buffalo-related-button:hover{background:#40564a}
+.buffalo-grades{border:1px solid #7b8e7b;background:#18251c;padding:16px 18px;font-size:.89rem;line-height:1.6}
+.buffalo-inline-notice{color:#e7d8ba;border-top:1px solid #586a56;padding-top:17px;font-size:.86rem!important}
+.buffalo-longdesc{margin-top:30px;border-top:1px solid #546153;border-bottom:1px solid #546153}
+.buffalo-longdesc details{padding:19px 0}
+.buffalo-longdesc summary{cursor:pointer;font-weight:700;color:#f1dbad}
+.buffalo-longdesc p{font-size:.96rem;color:#d6e0d3;line-height:1.74;max-width:1000px;margin-top:16px}
+.buffalo-experience .research-panel h4{font:400 1.36rem var(--serif);margin:25px 0 11px;color:#eee2c7}
+.buffalo-experience .research-panel .image-evidence-grid{grid-template-columns:minmax(0,1.55fr) minmax(190px,.75fr)}
+.buffalo-experience .research-panel .image-close img{max-height:370px}
+.buffalo-experience .image-locator img{object-fit:contain}
+.buffalo-home-hero picture img{object-position:50% 50%;filter:brightness(.7) saturate(.75)}
+.buffalo-home-hero::before{background:linear-gradient(90deg,#07140de8 0%,#0b1a13c4 36%,#111c1672 77%),linear-gradient(0deg,#0b1510ef,transparent 48%)}
+.works-grid .buffalo-primary img{object-position:50% 50%}
+.works-grid .royal-secondary img{object-position:40% 50%}
+.buffalo-experience .detail-dialog img{max-height:75vh}
+.buffalo-experience button:focus-visible,.buffalo-experience a:focus-visible{outline:3px solid #ead59c;outline-offset:3px}
+@media(max-width:950px){.buffalo-experience .explore-layout{display:flex;flex-direction:column}.buffalo-experience .chapter-index{order:0;align-self:stretch}.buffalo-experience .research-panel{order:1}.buffalo-experience .chapter-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}.buffalo-experience .research-panel .image-evidence-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.buffalo-experience .hotspot{width:37px;height:37px;min-width:37px;min-height:37px;font-size:.68rem}.buffalo-experience .chapter-list{grid-template-columns:1fr}.buffalo-experience .stage-meta{font-size:.7rem}.buffalo-method{font-size:.86rem}.buffalo-landing h1{font-size:clamp(3.8rem,15vw,5.7rem)}}
