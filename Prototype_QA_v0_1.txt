@@ -1,4 +1,0 @@
-1440px viewport: 9 cards, 10 markers incl. Teck sub-hotspot, story/evidence/source tabs and original toggle PASS. JS exceptions: 0
-390px viewport: 9 cards, 10 markers incl. Teck sub-hotspot, story/evidence/source tabs and original toggle PASS. JS exceptions: 0
-Frozen PNG source region versus george.jpg: exact 737 x 569 RGB pixel match.
-v1.7 panorama never modified; HTML embeds compressed display derivative only.
