@@ -251,3 +251,26 @@ h1,h2,h3{font-optical-sizing:auto}h1{font-weight:300}h2{font-weight:400}
 @media(max-width:1100px){.history-bottom{align-items:start;flex-direction:column}.history-next{white-space:normal}}
 @media(max-width:790px){.history-head{align-items:start;flex-direction:column;gap:13px}.history-grid{grid-template-columns:1fr;gap:25px}.history-sidebar{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:22px;align-items:start}.history-facts{margin-top:0}.history-prose section+section{margin-top:24px}.history-head h2{font-size:clamp(2.8rem,8vw,4rem)}}
 @media(max-width:540px){.history-room{padding:29px 20px 40px}.history-head{margin-bottom:26px}.history-head h2{font-size:clamp(2.6rem,12vw,3.65rem)}.history-sidebar{grid-template-columns:1fr}.history-archive{max-width:345px}.history-facts{margin-top:0}.history-prose p{font-size:1.13rem;line-height:1.63}.history-quicklinks{gap:9px 20px}.history-bottom{margin-top:32px}.history-sources{display:grid;gap:9px}}
+
+/* Collapsible historical introductions, shared across artwork pages. */
+.history-disclosure{background:var(--paper);color:var(--graphite);border:1px solid #a8b6a8;margin:0 0 24px;scroll-margin-top:24px}
+.history-disclosure-summary{list-style:none;display:grid;grid-template-columns:minmax(235px,1fr) minmax(280px,1.15fr) auto;align-items:center;gap:clamp(18px,3.3vw,48px);padding:22px clamp(22px,3.5vw,54px);cursor:pointer;transition:background-color .15s ease}
+.history-disclosure-summary::-webkit-details-marker{display:none}
+.history-disclosure-summary:hover{background:#e6e7db}
+.history-disclosure-summary:focus-visible{outline:3px solid var(--brass-on-paper);outline-offset:-5px}
+.history-disclosure-heading{display:flex;flex-direction:column;gap:5px}
+.history-disclosure-heading .eyebrow{color:var(--brass-on-paper);font-size:.7rem}
+.history-disclosure-heading strong{font:400 clamp(1.3rem,1.8vw,1.65rem)/1.16 var(--serif);letter-spacing:-.025em}
+.history-disclosure-preview{font:.86rem/1.45 var(--sans);color:#526457;max-width:55ch}
+.history-disclosure-action{display:flex;gap:13px;align-items:center;justify-content:flex-end;color:var(--brass-on-paper);font:.76rem/1.2 var(--sans);font-weight:700;white-space:nowrap;letter-spacing:.045em;text-transform:uppercase}
+.history-disclosure-symbol{display:grid;place-items:center;width:31px;height:31px;border:1px solid #9e8b6d;border-radius:50%;font-size:1.1rem;line-height:1}
+.history-disclosure-symbol:before{content:'+'}
+.history-disclosure[open] .history-disclosure-symbol:before{content:'−'}
+.history-close-label{display:none}
+.history-disclosure[open] .history-close-label{display:inline}
+.history-disclosure[open] .history-open-label{display:none}
+.history-disclosure[open] .history-disclosure-summary{border-bottom:1px solid #b1beb0}
+.history-disclosure .history-room{border:0;margin:0}
+@media(max-width:950px){.history-disclosure-summary{grid-template-columns:minmax(0,1fr) auto;gap:12px 20px}.history-disclosure-preview{grid-column:1;grid-row:2}.history-disclosure-action{grid-column:2;grid-row:1 / span 2}}
+@media(max-width:530px){.history-disclosure-summary{padding:17px 19px;gap:13px}.history-disclosure-heading strong{font-size:1.3rem}.history-disclosure-preview{font-size:.81rem}.history-disclosure-action{font-size:.7rem}.history-disclosure-symbol{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){.history-disclosure-summary{transition:none}}
