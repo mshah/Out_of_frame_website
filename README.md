@@ -38,3 +38,9 @@ Buffalo Corner and The Royal Ring now use the same research-chapter terminology,
 ## v1.5 historical background addition
 
 Each artwork introduces **The hunt and the photograph** between the panoramic first encounter and its numbered chapters. Jump links let visitors read the context or continue directly to the chapters. Separate museum-ivory reading panels preserve original photograph views, research context, unknown attribution and source links. The homepage and collection descriptions now explain the two historical occasions. Four essay drafts, all interactive chapter data and artwork pixels remain unchanged.
+
+## Photographic case note (proposed, manual review)
+
+- `essays/one-photograph-two-frames.html` is a standalone case study linked from the essays landing and homepage, not numbered among the four curatorial essays or the installation artworks.
+- The 1898/1900 figure preview is a **low-resolution, side-by-side atlas** derived from user-supplied scanned PDFs, not a recovered camera negative. It is built into `assets/images/rhino-1898-1900-preview.svg` for a reviewable static PR. Links take readers to the publications for close inspection. The two sources use different crops; do not call one the uncropped original.
+- The page is responsive and keyboard-operable (three view buttons). Production QA should replace the small embedded preview with larger scans if permissions allow.
