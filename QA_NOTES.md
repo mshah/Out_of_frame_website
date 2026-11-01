@@ -29,3 +29,11 @@
 - The chapter IDs, research questions, evidence fields, grades, citations, bounds and raster images are unchanged.
 - Isolated Chromium checks passed for all 13 Buffalo and all 9 Royal chapter selections on desktop; sampled mobile chapters; zoom, source-photo view, detail dialog, filters, reset and marker reveal/hide. No JS page errors.
 - Direct hosted-path deployment was not tested; runtime browser policy blocks localhost/file URLs. Preview tests injected exact site HTML, local CSS, scripts and image content into isolated Chromium documents.
+
+
+### v1.5 historical background verification
+- Built on full v1.4.2 website and checked that the artwork source images, details, annotation data and original JS were unchanged.
+- Added separate 433-word Buffalo Corner and 523-word Royal Ring introductory histories (not counting captions, provenance or source lists).
+- Reviewed history against Buffalo Corner Master Annotation Packet v4.0, Royal Ring Master Annotation Packet v0.4, Smithsonian, LOC, ANU and Asian Art Museum records. The original-photograph photographer/operator uncertainty is explicit for both.
+- Isolated Chromium checks using exact HTML, CSS, artwork images and injected local JS/data scripts passed at desktop and mobile viewport sizes. Tested original-photo presence, reading section, 13/9 chapter buttons, jump links, reveal markers, panels and source tabs; no page errors.
+- The run cannot establish live Cloudflare Workers navigation or physical mobile-device behavior; these remain deployment checks.

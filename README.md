@@ -1,4 +1,4 @@
-# OUT OF FRAME — Exhibition website v1.4
+# OUT OF FRAME — Exhibition website v1.5
 
 **Complete static website** for **Out of Frame: The Making of a Trophy**. Buffalo Corner is now Study 01 and The Royal Ring is Study 02.
 
@@ -12,8 +12,8 @@
 
 - `index.html` — series entrance, Buffalo Corner first, both artworks, essays and method links.
 - `works/index.html` — collection, Buffalo Corner then The Royal Ring.
-- `works/buffalo-corner.html` — full **13-scene** interactive experience. Image, zoom/pan, hide/reveal markers, original photograph, research and evidence layers, individual source references, thematic paths, related scenes, details and source locators, hash deep links.
-- `works/the-royal-ring.html` — original nine-chapter interactive Royal Ring experience, retaining its **v2.14** image and v1.3 alignment fixes.
+- `works/buffalo-corner.html` — historical introduction to Roosevelt’s 1909 Kamiti visit and photograph, plus **13-chapter** interactive experience with panorama, close-ups, evidence layers, source references and deep links.
+- `works/the-royal-ring.html` — historical introduction to George V’s December 1911 Nepalese hunt and photographic album, plus original **nine-chapter** interactive experience retaining its **v2.14** image and v1.3 alignment fixes.
 - `essays/` — four working-draft curatorial essays.
 - `method.html` and `about.html` — interpretive and project background.
 
@@ -28,8 +28,13 @@
 
 **Research limits:** The sepia rectangle contains the historical photograph; the colour field is contemporary artistic reconstruction. It combines different moments. Scene coordinates are navigational working bounds, not historic measurements. Ali operating a camera is an explicitly counterfactual intervention. Source endpoints and rights claims in the packet have not all been independently rechecked. The v2.1 working PNG is not a final exhibition-resolution print proof.
 
-See `RELEASE_v1_4.md`, `QA_NOTES.md` and `ROYAL_RING_ALIGNMENT_AUDIT_v1_3.md` for changes and technical checks.
+See `RELEASE_v1_5.md`, `QA_NOTES.md` and `ROYAL_RING_ALIGNMENT_AUDIT_v1_3.md` for changes and technical checks.
 
 
 ## v1.4.2 editorial consistency pass
 Buffalo Corner and The Royal Ring now use the same research-chapter terminology, control labels, evidence key, locator copy and source framing. All thirteen Buffalo chapters received line edits; the original v4.0 packet copy is retained in the non-displayed `packetAnnotation` field for editorial traceability. The About and Method pages now accurately describe both completed experiences. See `EDITORIAL_STYLE_GUIDE_v1_4_2.md`.
+
+
+## v1.5 historical background addition
+
+Each artwork introduces **The hunt and the photograph** between the panoramic first encounter and its numbered chapters. Jump links let visitors read the context or continue directly to the chapters. Separate museum-ivory reading panels preserve original photograph views, research context, unknown attribution and source links. The homepage and collection descriptions now explain the two historical occasions. Four essay drafts, all interactive chapter data and artwork pixels remain unchanged.
