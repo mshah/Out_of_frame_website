@@ -116,7 +116,8 @@
   function renderPanel() {
     const card = byId[active];
     if (!card) return;
-    const index = cards.indexOf(card);
+    const visible = cards.filter(matches);
+    const index = visible.indexOf(card);
     panel.innerHTML = `
       <div class="cb-panel-overline"><span>${esc(card.id)} · ${esc(card.theme)}</span><span>Annotation draft · image pending</span></div>
       <h3 id="cbPanelTitle">${esc(displayName(card))}</h3>
@@ -157,7 +158,7 @@
       });
     }
     panel.querySelectorAll('[data-step]').forEach(button => button.addEventListener('click', () => {
-      const next = cards[index + Number(button.dataset.step)];
+      const next = visible[index + Number(button.dataset.step)];
       if (next) selectCard(next.id, true, true);
     }));
     activateTab(tab);
