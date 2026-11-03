@@ -24,3 +24,4 @@ Delhi Durbar/December 1911 Nepal visit, Chandra Shumsher as diplomatic host, the
 
 ### Publishing
 Deploy as a complete replacement of the previous site or overlay the patch atop v1.4.2. The full ZIP contains the complete `Out_of_Frame_Site` directory.
+ 
