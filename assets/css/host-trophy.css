@@ -90,3 +90,17 @@
 .cb-home-teaser-desc{grid-column:1;color:#ccd6cb;font:.87rem/1.55 var(--sans)}
 .cb-home-teaser-arrow{grid-row:2/4;grid-column:2;align-self:center;color:var(--gold);font:.75rem var(--sans);letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}
 @media(max-width:700px){.cb-home-teaser{grid-template-columns:1fr;padding:22px;gap:10px}.cb-home-teaser-kicker,.cb-home-teaser-desc,.cb-home-teaser-title,.cb-home-teaser-arrow{grid-column:1;grid-row:auto}.cb-home-teaser-arrow{justify-self:start}.works-grid .cb-work-card{min-height:400px}}
+
+/* Approved panorama: shared exhibition markers, close-ups and gold locators. */
+.cb-landing{background-image:linear-gradient(90deg,#101a14dd,#101a1455),url('../images/host-trophy-hero.webp');background-size:cover;background-position:center}
+.cb-hero-rectangles{display:none}
+.cb-stage-window{overflow:auto;min-height:0;scrollbar-color:#768879 #27352b}
+.cb-stage-concept{min-height:0;min-width:1100px;width:100%;position:relative;background:none;aspect-ratio:2048/760}
+.cb-stage-concept>img{display:block;width:100%;height:auto}
+.cb-stage-source{padding:24px;min-width:0}
+.cb-stage-source>img{display:block;max-height:75vh;max-width:100%;width:auto;margin:auto}
+.cb-experience .hotspot{width:40px;height:40px}
+.cb-experience .hotspot:focus-visible{outline:3px solid white;outline-offset:3px}
+.cb-chapters .image-close{margin:0}
+.works-grid .cb-work-card{background-image:linear-gradient(0deg,#101a14e8,#101a1433),url('../images/host-trophy-hero.webp');background-size:cover;background-position:center}
+@media(max-width:580px){.cb-stage-concept{min-height:0;min-width:1100px}.cb-stage-source{padding:10px}}

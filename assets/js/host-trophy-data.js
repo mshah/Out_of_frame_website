@@ -1,6 +1,4 @@
-/* Source-controlled draft text from The Host and the Trophy Master Annotation Packet v0.1 (1 November 2026).
- * Never assign identities to G/R/E IDs without an authenticated caption. No hotspot coordinates or image URLs have been invented.
- */
+/* Chapter bounds refer to the approved 2048 × 760 panorama. Navigation anchors do not identify people. */
 window.OOF_HOST_DATA = {
   "artwork": {
     "name": "The Host and the Trophy",
@@ -10,8 +8,8 @@ window.OOF_HOST_DATA = {
     "sourcePixels": "2048 × 1543",
     "sourceSha256": "579894c1b69112660b014f85655428c54e09b463c13164cd0b1352ba943f96db",
     "packetVersion": "v0.1 · 1 November 2026",
-    "imageStatus": "Not yet published on the site; awaiting approved archival source, exhibition panorama and scene images",
-    "approval": "Historical source locked in master packet; draft website text only."
+    "imageStatus": "Approved full-photograph panorama · 9 November 2026",
+    "approval": "Artwork approved; annotation text remains an editorial draft."
   },
   "themes": [
     "All",
@@ -38,7 +36,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "The image",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 21.973,
+      "y": 5.921,
+      "bounds": [
+        398,
+        12,
+        1309,
+        700
+      ],
+      "detail": "../assets/images/host-details/cb-01-detail.webp",
+      "locator": "../assets/images/host-details/cb-01-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "A close-up from the approved panorama. Visible subjects are not individually identified."
     },
     {
       "id": "CB-02",
@@ -57,7 +67,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Animal & land",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 42.969,
+      "y": 67.763,
+      "bounds": [
+        650,
+        435,
+        1110,
+        575
+      ],
+      "detail": "../assets/images/host-details/cb-02-detail.webp",
+      "locator": "../assets/images/host-details/cb-02-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "A close-up from the approved panorama. Visible subjects are not individually identified."
     },
     {
       "id": "CB-03",
@@ -75,7 +97,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "The image",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 32.715,
+      "y": 47.368,
+      "bounds": [
+        565,
+        205,
+        1125,
+        510
+      ],
+      "detail": "../assets/images/host-details/cb-03-detail.webp",
+      "locator": "../assets/images/host-details/cb-03-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "A close-up from the approved panorama. Visible subjects are not individually identified."
     },
     {
       "id": "CB-04",
@@ -94,7 +128,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Power & guests",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 49.072,
+      "y": 57.895,
+      "bounds": [
+        550,
+        185,
+        1130,
+        565
+      ],
+      "detail": "../assets/images/host-details/cb-04-detail.webp",
+      "locator": "../assets/images/host-details/cb-04-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "The posed party provides context for royal hosting; no face is identified as the maharaja."
     },
     {
       "id": "CB-05",
@@ -113,7 +159,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Power & guests",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 46.387,
+      "y": 37.5,
+      "bounds": [
+        620,
+        210,
+        1110,
+        495
+      ],
+      "detail": "../assets/images/host-details/cb-05-detail.webp",
+      "locator": "../assets/images/host-details/cb-05-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "The portrait group; the names and positions of royal guests remain unresolved."
     },
     {
       "id": "CB-06",
@@ -131,7 +189,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Elephants & labour",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 28.32,
+      "y": 19.737,
+      "bounds": [
+        405,
+        65,
+        890,
+        240
+      ],
+      "detail": "../assets/images/host-details/cb-06-detail.webp",
+      "locator": "../assets/images/host-details/cb-06-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "A close-up from the approved panorama. Visible subjects are not individually identified."
     },
     {
       "id": "CB-07",
@@ -148,7 +218,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Elephants & labour",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 35.889,
+      "y": 13.816,
+      "bounds": [
+        610,
+        60,
+        890,
+        230
+      ],
+      "detail": "../assets/images/host-details/cb-07-detail.webp",
+      "locator": "../assets/images/host-details/cb-07-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "A close-up from the approved panorama. Visible subjects are not individually identified."
     },
     {
       "id": "CB-08",
@@ -166,7 +248,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Elephants & labour",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 57.617,
+      "y": 41.447,
+      "bounds": [
+        405,
+        65,
+        1285,
+        425
+      ],
+      "detail": "../assets/images/host-details/cb-08-detail.webp",
+      "locator": "../assets/images/host-details/cb-08-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "A close-up from the approved panorama. Visible subjects are not individually identified."
     },
     {
       "id": "CB-09",
@@ -185,7 +279,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Animal & land",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 16.357,
+      "y": 27.632,
+      "bounds": [
+        235,
+        65,
+        530,
+        535
+      ],
+      "detail": "../assets/images/host-details/cb-09-detail.webp",
+      "locator": "../assets/images/host-details/cb-09-locator.webp",
+      "detailType": "Archive and reconstruction",
+      "detailCaption": "A close-up from the approved panorama. The colour extension is an artistic reconstruction."
     },
     {
       "id": "CB-10",
@@ -203,7 +309,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Power & guests",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 34.18,
+      "y": 63.158,
+      "bounds": [
+        630,
+        350,
+        1130,
+        575
+      ],
+      "detail": "../assets/images/host-details/cb-10-detail.webp",
+      "locator": "../assets/images/host-details/cb-10-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "The tiger and party anchor a discussion of hunting conventions, not a verified account of the shot."
     },
     {
       "id": "CB-11",
@@ -221,7 +339,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Elephants & labour",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 5.859,
+      "y": 56.579,
+      "bounds": [
+        0,
+        265,
+        230,
+        545
+      ],
+      "detail": "../assets/images/host-details/cb-11-detail.webp",
+      "locator": "../assets/images/host-details/cb-11-locator.webp",
+      "detailType": "Interpretive reconstruction",
+      "detailCaption": "Reconstructed baggage handling evokes transport. These figures and their placement are imagined; tracking is not depicted."
     },
     {
       "id": "CB-12",
@@ -240,7 +370,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "Animal & land",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 73.975,
+      "y": 75.0,
+      "bounds": [
+        1310,
+        410,
+        2048,
+        760
+      ],
+      "detail": "../assets/images/host-details/cb-12-detail.webp",
+      "locator": "../assets/images/host-details/cb-12-locator.webp",
+      "detailType": "Interpretive reconstruction",
+      "detailCaption": "Reconstructed grassland evokes environmental context, not a surveyed location."
     },
     {
       "id": "CB-13",
@@ -259,7 +401,19 @@ window.OOF_HOST_DATA = {
       ],
       "theme": "The image",
       "status": "Draft · awaiting editorial review",
-      "visualStatus": "Image placeholder · no approved scene crop or hotspot coordinates"
+      "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
+      "x": 61.768,
+      "y": 85.526,
+      "bounds": [
+        398,
+        12,
+        1309,
+        700
+      ],
+      "detail": "../assets/images/host-details/cb-13-detail.webp",
+      "locator": "../assets/images/host-details/cb-13-locator.webp",
+      "detailType": "Archival photograph detail",
+      "detailCaption": "The bounded archival image anchors questions of authorship and circulation; no photographer has been added."
     }
   ],
   "sources": {
@@ -271,7 +425,7 @@ window.OOF_HOST_DATA = {
     "S02": {
       "label": "Artist-supplied original · CB-SRC-001 (behar.jpg), 2048 × 1543",
       "url": "",
-      "type": "Locked image — not uploaded to this site"
+      "type": "Historical photograph; site view extracted from approved composite, not the original JPEG download"
     },
     "S03": {
       "label": "Cleveland Moffett · Hunting on Elephants (Burges testimony), McClure’s, 1898",

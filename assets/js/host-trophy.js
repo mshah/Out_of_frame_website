@@ -22,16 +22,48 @@
   let active = 'CB-01';
   let theme = 'All';
   let tab = 'story';
+  let revealed = false, zoom = 1;
+  const markers = document.getElementById('cbHotspots');
+  const reveal = document.getElementById('cbRevealBtn');
+  const viewport = document.getElementById('cbStageWindow');
+  const dialog = document.getElementById('cbDetailDialog');
+  function renderMarkers() {
+    markers.replaceChildren();
+    if (!revealed) return;
+    cards.filter(matches).forEach(card => {
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'hotspot' + (card.id === active ? ' active' : '');
+      button.style.left = card.x + '%'; button.style.top = card.y + '%';
+      button.textContent = card.id.slice(-2); button.setAttribute('aria-label', card.id + ': ' + card.title);
+      button.setAttribute('aria-pressed', String(card.id === active));
+      button.addEventListener('click', () => selectCard(card.id, true)); markers.append(button);
+    });
+  }
+  function locate() {
+    showImageSlot('concept'); revealed = true; reveal.setAttribute('aria-pressed', 'true'); reveal.textContent = 'Hide chapter markers'; renderMarkers();
+    viewport.scrollIntoView({behavior: reducedMotion() ? 'auto' : 'smooth', block: 'center'});
+    viewport.scrollTo({left: Math.max(0, concept.offsetWidth * byId[active].x / 100 - viewport.clientWidth / 2), behavior: reducedMotion() ? 'auto' : 'smooth'});
+    markers.querySelector('.active')?.focus({preventScroll:true});
+  }
+  reveal.addEventListener('click', () => { revealed = !revealed; reveal.setAttribute('aria-pressed', String(revealed)); reveal.textContent = revealed ? 'Hide chapter markers' : 'Reveal thirteen chapters'; renderMarkers(); });
+  for (const [id, delta] of [['cbZoomIn', .25], ['cbZoomOut', -.25]]) document.getElementById(id).addEventListener('click', () => {
+    zoom = Math.max(1, Math.min(3, zoom + delta)); concept.style.width = (zoom * 100) + '%';
+    document.getElementById('cbZoomOut').disabled = zoom === 1; document.getElementById('cbZoomIn').disabled = zoom === 3;
+  });
+  dialog.querySelector('button').addEventListener('click', () => dialog.close());
 
   function showImageSlot(which) {
     const sourceMode = which === 'source';
     concept.hidden = sourceMode;
     source.hidden = !sourceMode;
     conceptBtn.setAttribute('aria-pressed', String(!sourceMode));
+    reveal.disabled = sourceMode;
+    document.getElementById('cbZoomIn').disabled = sourceMode || zoom === 3;
+    document.getElementById('cbZoomOut').disabled = sourceMode || zoom === 1;
     sourceBtn.setAttribute('aria-pressed', String(sourceMode));
     stageCaption.textContent = sourceMode
-      ? 'Original CB-SRC-001 · source pixels not included in the site. The approved file will be placed intact.'
-      : 'Draft panorama placeholder · No reconstructed image or spatial hotspot positions have been approved.';
+      ? 'Historical photograph · browser view extracted from the approved composite, not the original JPEG file.'
+      : 'Approved panorama · full photographic border retained; surrounding colour is interpretive reconstruction.';
   }
   conceptBtn.addEventListener('click', () => showImageSlot('concept'));
   sourceBtn.addEventListener('click', () => showImageSlot('source'));
@@ -58,6 +90,7 @@
   }
 
   function renderChapters() {
+    renderMarkers();
     chapterList.replaceChildren();
     for (const card of cards.filter(matches)) {
       const button = document.createElement('button');
@@ -93,11 +126,11 @@
     }
     if (choice === 'evidence') {
       return '<div class="evidence-box"><strong>Historical foundation / scope</strong><p>' + esc(card.evidence) + '</p></div>' +
-        '<div class="cb-subject-anchor"><strong>Planned source or contextual anchor:</strong> ' + esc(card.anchor) + '</div>' +
+        '<div class="cb-subject-anchor"><strong>Source or contextual anchor:</strong> ' + esc(card.anchor) + '</div>' +
         '<p class="cb-note"><strong>Evidence grades are claim-specific:</strong> A = source-visible or exact-exposure fact; B = same expedition or album; C = contextual period evidence; D = openly disclosed artistic choice. A person documented elsewhere is not proven to stand beyond the edge of this photograph.</p>' + sourceMarkup(card.sourceKeys);
     }
     return '<div class="evidence-box"><strong>Do not claim or depict as fact</strong><p>' + esc(card.limits) + '</p></div>' +
-      '<p class="cb-note"><strong>Visual status:</strong> ' + esc(card.visualStatus) + '. Final image coordinates and source identifications require separate verification.</p>';
+      '<p class="cb-note"><strong>Visual status:</strong> ' + esc(card.visualStatus) + '. Marker placement does not establish historical identity.</p>';
   }
 
   function activateTab(next) {
@@ -119,17 +152,10 @@
     const visible = cards.filter(matches);
     const index = visible.indexOf(card);
     panel.innerHTML = `
-      <div class="cb-panel-overline"><span>${esc(card.id)} · ${esc(card.theme)}</span><span>Annotation draft · image pending</span></div>
+      <div class="cb-panel-overline"><span>${esc(card.id)} · ${esc(card.theme)}</span><span>Research annotation draft</span></div>
       <h3 id="cbPanelTitle">${esc(displayName(card))}</h3>
       <p class="cb-question">${esc(card.question)}</p>
-      <div class="cb-panel-placeholder" aria-label="Unpopulated research image slots">
-        <div class="cb-image-slot" role="img" aria-label="Reserved for a detail of the archival photograph or approved reconstruction">
-          <span>Detail image · Reserved</span><strong>Chapter ${esc(card.id)}</strong><small>No archival image or contemporary reconstruction shown</small>
-        </div>
-        <div class="cb-image-slot cb-locator" role="img" aria-label="Locator preview reserved pending image review">
-          <span>Locator · Pending</span><strong>Position unassigned</strong><small>No hypothetical coordinates are placed on a source image</small>
-        </div>
-      </div>
+      <section class="image-evidence" aria-label="Chapter close-up"><div class="image-evidence-heading"><span class="eyebrow">Look closer · ${esc(card.id)}</span><span class="image-evidence-type">${esc(card.detailType)}</span></div><div class="image-evidence-grid"><figure class="image-close"><button class="detail-image-button" id="cbEnlarge" type="button" aria-label="Enlarge detail: ${esc(card.title)}"><img src="${esc(card.detail)}" alt="${esc(card.detailCaption)}"><span class="detail-enlarge">↗ Enlarge detail</span></button><figcaption>${esc(card.detailCaption)}</figcaption></figure><aside class="image-locator"><div class="locator-heading">Where this detail sits</div><img src="${esc(card.locator)}" alt="Panorama with this chapter’s crop outlined in gold"><p>A navigation anchor, not proof of an undocumented action’s location.</p><button class="btn sm" id="cbLocate" type="button">Find this in the panorama ↑</button></aside></div></section>
       <div class="research-tabs cb-tabs" role="tablist" aria-label="Read the selected chapter">
         <button class="research-tab" type="button" id="cb-tab-story" role="tab" data-tab="story" aria-controls="cbTabContent">The story</button>
         <button class="research-tab" type="button" id="cb-tab-evidence" role="tab" data-tab="evidence" aria-controls="cbTabContent">Evidence &amp; sources</button>
@@ -138,7 +164,7 @@
       <div id="cbTabContent" class="cb-tabpanel" role="tabpanel"></div>
       <div class="cb-previous-next">
         <button type="button" data-step="-1" ${index === 0 ? 'disabled' : ''}>← Previous chapter</button>
-        <button type="button" data-step="1" ${index === cards.length - 1 ? 'disabled' : ''}>Next chapter →</button>
+        <button type="button" data-step="1" ${index === visible.length - 1 ? 'disabled' : ''}>Next chapter →</button>
       </div>
     `;
     const tabs = Array.from(panel.querySelectorAll('[role="tab"]'));
@@ -161,6 +187,13 @@
       const next = visible[index + Number(button.dataset.step)];
       if (next) selectCard(next.id, true, true);
     }));
+    panel.querySelector('#cbLocate').addEventListener('click', locate);
+    panel.querySelector('#cbEnlarge').addEventListener('click', () => {
+      document.getElementById('cbDetailImage').src = card.detail;
+      document.getElementById('cbDetailImage').alt = card.detailCaption;
+      document.getElementById('cbDetailCaption').textContent = card.title + ' — ' + card.detailCaption;
+      dialog.showModal();
+    });
     activateTab(tab);
   }
 
