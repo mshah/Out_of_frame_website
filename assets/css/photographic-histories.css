@@ -43,7 +43,7 @@
 .ph-index-header{display:grid;grid-template-columns:1fr .65fr;gap:40px;align-items:end;margin-bottom:26px}
 .ph-index-header h2{font:400 clamp(2.5rem,4.2vw,4.2rem)/1.06 var(--serif);letter-spacing:-.035em;margin:12px 0 0;color:var(--graphite)}
 .ph-index-header p{font:1rem/1.6 var(--sans);color:#506052;margin:0}
-.ph-index-cards{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}
+.ph-index-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .ph-index-cards a{display:flex;justify-content:space-between;gap:18px;flex-direction:column;text-decoration:none;border:1px solid #a9b8aa;padding:25px;background:#e4e8df;color:var(--graphite);min-height:210px}
 .ph-index-cards a:hover{background:#dbe2d7}
 .ph-index-cards a span{font:700 .73rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--brass-on-paper)}
