@@ -7,9 +7,8 @@ window.OOF_HOST_DATA = {
     "sourceFile": "behar.jpg",
     "sourcePixels": "2048 × 1543",
     "sourceSha256": "579894c1b69112660b014f85655428c54e09b463c13164cd0b1352ba943f96db",
-    "packetVersion": "v0.1 · 1 November 2026",
     "imageStatus": "Approved full-photograph panorama · 9 November 2026",
-    "approval": "Artwork approved; annotation text remains an editorial draft."
+    "approval": "Panorama on view; historical claims and identifications remain subject to evidence review."
   },
   "themes": [
     "All",
@@ -26,16 +25,13 @@ window.OOF_HOST_DATA = {
       "question": "What did the camera choose to make memorable?",
       "anchor": "The entire unaltered archival rectangle: tiger, foreground group, elephants, riders, pale sky and grass.",
       "annotation": "A tiger lies at the feet of a gathered hunting party. The people nearest its body form the front row; behind them stand other guests, and above them rise elephants carrying tall howdahs and riders. The arrangement is remarkable for how much it does show. Working animals and some of the people who managed them were not entirely excluded from the historical picture. Yet the available catalogue names the titled visitors and the album’s compiler far more readily than the people perched on the elephants. The difference between appearing in a photograph and being remembered by its caption is part of this work’s subject. We preserve the original print unchanged, including the faded edges and marks, and expand the view into a researched but openly interpretive surrounding world. The expansion is not the recovery of a lost panoramic negative. The historical rectangle remains the test of every claim we make about this instant.",
-      "evidence": "The uploaded 2048 × 1543 JPEG governs the visible arrangement (A). Bonhams provides album context but not this exposure’s detailed caption (B for album provenance). The curatorial concept requires the untouched core and transparent reconstructed margins [P01; P02; S01].",
+      "evidence": "The uploaded 2048 × 1543 JPEG governs the visible arrangement (A). Bonhams provides album context but not this exposure’s detailed caption (B for album provenance). The artwork retains the historical core and labels the reconstructed surroundings as interpretation [S01].",
       "limits": "No recolouring the photographed people, no erased exposure defects, no claim that the photograph was physically cropped to conceal workers.",
       "sourceKeys": [
-        "S01",
-        "P01",
-        "P02",
-        "P03"
+        "S01"
       ],
       "theme": "The image",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 21.973,
       "y": 5.921,
@@ -57,16 +53,15 @@ window.OOF_HOST_DATA = {
       "question": "What is lost when an animal’s death becomes a group portrait?",
       "anchor": "The tiger body across the lower foreground and the G09–G13 seated row.",
       "annotation": "The tiger is the physical centre of this portrait, but the photograph cannot tell us much about its life. Its striped body extends across the grass; people sit immediately behind it, their proximity making the encounter legible as an achievement. Even the question ‘Who killed this tiger?’ remains unanswered. The album catalogue mentions a large tiger attributed to Stephen Hungerford Pollen, but it does not establish that the tiger in this particular photograph is that animal. Nor do the visible stripes, size or pose reveal where it lived, whether it had cubs, or which hunter first struck it. The original image records a death that had become an occasion for the camera. Our added landscape should acknowledge the tiger’s ecological world without inventing a biography for this individual. Its body must remain more than an accessory to the guests’ reputations.",
-      "evidence": "A: dead tiger and its horizontal placement. S01 documents other tiger photographs in album, not an authenticated identification of this carcass. Burges and Nripendra Narayan describe hunting in riverine cover; those practices are C here. The series essay on animal life is interpretive [S01; S03; S06; P04].",
+      "evidence": "A: dead tiger and its horizontal placement. S01 documents other tiger photographs in album, not an authenticated identification of this carcass. Burges and Nripendra Narayan describe hunting in riverine cover; those practices are C here. The wider habitat remains interpretive [S01; S03; S06].",
       "limits": "No invented sex, age, measurements, wounded-animal behavior, cubs or exact bullet wounds. Do not reduce the body to an abstract moral emblem.",
       "sourceKeys": [
         "S01",
         "S03",
-        "S06",
-        "P04"
+        "S06"
       ],
       "theme": "Animal & land",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 42.969,
       "y": 67.763,
@@ -88,15 +83,14 @@ window.OOF_HOST_DATA = {
       "question": "When can a face be named without turning resemblance into evidence?",
       "anchor": "Foreground figures G01–G13, including the visually prominent G04, G06 and G07.",
       "annotation": "Thirteen foreground figures can be numbered in this reproduction. Their hats, jackets, gestures and relative positions are often clear enough to describe; their identities are not. The large hunting party in the album included Indian royalty, European guests and state personnel, but a list of people who travelled to Cooch Behar is not a map of faces in this particular photograph. One centrally placed figure wears a light, high-necked outfit. That visual prominence can tempt us to identify a princess or maharani, but clothing and placement are not proof. The temporary numbers on our research overlay make this uncertainty visible rather than concealing it. As further captions surface, a name may be attached to a number. Until then, the honest description is not ‘unknown servant’ or ‘famous guest’, but ‘person visible, identity unresolved.’ The archive may be incomplete; we should not repair the silence by invention.",
-      "evidence": "G01–G13 correspond to the documented research overlay and CSV. The underlying print is A for clothing and placement; album party names are B at album level; all face-to-name matches currently unproven [S01; S05; P03].",
+      "evidence": "G01–G13 correspond to the documented research overlay and CSV. The underlying print is A for clothing and placement; album party names are B at album level; all face-to-name matches currently unproven [S01; S05].",
       "limits": "Do not copy a celebrity portrait into a generated figure and label it an archival identification; do not assume clothing proves nationality, gender or rank.",
       "sourceKeys": [
         "S01",
-        "S05",
-        "P03"
+        "S05"
       ],
       "theme": "The image",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 32.715,
       "y": 47.368,
@@ -123,11 +117,10 @@ window.OOF_HOST_DATA = {
       "sourceKeys": [
         "S01",
         "S05",
-        "S07",
-        "P04"
+        "S07"
       ],
       "theme": "Power & guests",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 49.072,
       "y": 57.895,
@@ -154,11 +147,10 @@ window.OOF_HOST_DATA = {
       "sourceKeys": [
         "S01",
         "S04",
-        "S05",
-        "P04"
+        "S05"
       ],
       "theme": "Power & guests",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 46.387,
       "y": 37.5,
@@ -184,11 +176,10 @@ window.OOF_HOST_DATA = {
       "limits": "No invented names, biographies, facial replacements, coercive gestures or stereotypical costume; no assumption of national or social status based on headwear.",
       "sourceKeys": [
         "S03",
-        "S01",
-        "P03"
+        "S01"
       ],
       "theme": "Elephants & labour",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 28.32,
       "y": 19.737,
@@ -213,11 +204,10 @@ window.OOF_HOST_DATA = {
       "evidence": "Tall structures A-visible. Burges’s 1898 account describes a teak frame, cane sides, pads, straps, and a four-person fastening process; this provides C-level technical comparison for CB-SRC-001 [S03].",
       "limits": "No circus-style ornamental towers, identical cloned howdahs, impossible straps, or working figures placed where the original camera geometry does not allow.",
       "sourceKeys": [
-        "S03",
-        "P02"
+        "S03"
       ],
       "theme": "Elephants & labour",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 35.889,
       "y": 13.816,
@@ -247,7 +237,7 @@ window.OOF_HOST_DATA = {
         "S03"
       ],
       "theme": "Elephants & labour",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 57.617,
       "y": 41.447,
@@ -274,11 +264,10 @@ window.OOF_HOST_DATA = {
       "sourceKeys": [
         "S03",
         "S04",
-        "S05",
-        "P04"
+        "S05"
       ],
       "theme": "Animal & land",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 16.357,
       "y": 27.632,
@@ -304,11 +293,10 @@ window.OOF_HOST_DATA = {
       "limits": "No forensic reenactment attributed to this tiger; no statement that the first-bullet practice was universal across India.",
       "sourceKeys": [
         "S03",
-        "S06",
-        "P04"
+        "S06"
       ],
       "theme": "Power & guests",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 34.18,
       "y": 63.158,
@@ -334,11 +322,10 @@ window.OOF_HOST_DATA = {
       "limits": "No precise named tracking party, exact hour, identifiable villages or simulated photograph of the same tiger alive earlier that day.",
       "sourceKeys": [
         "S03",
-        "S01",
-        "P01"
+        "S01"
       ],
       "theme": "Elephants & labour",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 5.859,
       "y": 56.579,
@@ -365,14 +352,13 @@ window.OOF_HOST_DATA = {
       "sourceKeys": [
         "S03",
         "S05",
-        "S06",
-        "P02"
+        "S06"
       ],
       "theme": "Animal & land",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 73.975,
-      "y": 75.0,
+      "y": 75,
       "bounds": [
         1310,
         410,
@@ -395,12 +381,10 @@ window.OOF_HOST_DATA = {
       "limits": "Do not assign the camera to Pollen by default; do not reuse any Brill comparative photograph as a reconstructed inset without checking its distinct licence.",
       "sourceKeys": [
         "S01",
-        "S04",
-        "P01",
-        "P03"
+        "S04"
       ],
       "theme": "The image",
-      "status": "Draft · awaiting editorial review",
+      "status": "Research chapter · historical claims qualified in evidence notes",
       "visualStatus": "Approved panorama crop; marker is a navigational anchor, not an identity or exact historical placement",
       "x": 61.768,
       "y": 85.526,
@@ -421,11 +405,6 @@ window.OOF_HOST_DATA = {
       "label": "Bonhams / Rhino Resource Center · Pollen hunting-party album, Lot 20",
       "url": "https://rhinoresourcecenter.com/wp-content/uploads/2023/11/1699011395.pdf",
       "type": "Album catalogue"
-    },
-    "S02": {
-      "label": "Artist-supplied original · CB-SRC-001 (behar.jpg), 2048 × 1543",
-      "url": "",
-      "type": "Historical photograph; site view extracted from approved composite, not the original JPEG download"
     },
     "S03": {
       "label": "Cleveland Moffett · Hunting on Elephants (Burges testimony), McClure’s, 1898",
@@ -451,26 +430,6 @@ window.OOF_HOST_DATA = {
       "label": "Joydeep Pal · Development of Cooch Behar State Under the Maharajas (2015)",
       "url": "https://www.rhinoresourcecenter.com/pdf_files/169/1698327344.pdf",
       "type": "Secondary historical thesis"
-    },
-    "P01": {
-      "label": "Out of Frame · The Making of a Trophy working concept v0.2",
-      "url": "",
-      "type": "Internal project document"
-    },
-    "P02": {
-      "label": "Out of Frame · Methodology",
-      "url": "",
-      "type": "Internal project document"
-    },
-    "P03": {
-      "label": "Buffalo Corner v4.0 and The Royal Ring v0.4 master packets",
-      "url": "",
-      "type": "Internal project reference"
-    },
-    "P04": {
-      "label": "Out of Frame · Curatorial Essays working drafts v0.1",
-      "url": "",
-      "type": "Internal editorial document"
     }
   }
 };
